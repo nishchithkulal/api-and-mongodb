@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.json());
 
 // MongoDB Atlas Connection
-const mongoURI = 'mongodb+srv://admin:admin@cluster0.2jtnyua.mongodb.net/patientDB?retryWrites=true&w=majority&appName=Cluster0';
+const mongoURI = 'mongodb+srv://admin:<password>@cluster0.2jtnyua.mongodb.net/patientDB?retryWrites=true&w=majority&appName=Cluster0';
 mongoose.connect(mongoURI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
